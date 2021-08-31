@@ -11,6 +11,28 @@
     "mass": 1.879
   },
   {
+    "name": "Ilos",
+    "orbitalPeriod": 261,
+    "radius": 8607,
+    "dayLength": 54.5,
+    "atmPressure": 11.26,
+    "surfaceTempC": 38,
+    "surfaceTempF": 100,
+    "surfaceGravity": 1.17,
+    "mass": 2.115
+  },
+  {
+    "name": "Noveria",
+    "orbitalPeriod": 0.9,
+    "radius": 5656,
+    "dayLength": 52,
+    "atmPressure": 0.87,
+    "surfaceTempC": -1,
+    "surfaceTempF": 30,
+    "surfaceGravity": 0.81,
+    "mass": 0.63
+  },
+  {
     "name": "Therum",
     "orbitalPeriod": 6.4,
     "radius": 6724,
@@ -20,5 +42,16 @@
     "surfaceTempF": 138,
     "surfaceGravity": 1.12,
     "mass": 1.236
+  },
+  {
+    "name": "Virmire",
+    "orbitalPeriod": 9.2,
+    "radius": 6440,
+    "dayLength": 22.3,
+    "atmPressure": 0.9,
+    "surfaceTempC": 32,
+    "surfaceTempF": 138,
+    "surfaceGravity": 90,
+    "mass": 0.87
   }
 ]
