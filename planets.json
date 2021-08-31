@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Feros",
+    "orbitalPeriod": 3.2,
+    "radius": 8366,
+    "dayLength": 30.3,
+    "atmPressure": 5.44,
+    "surfaceTempC": 10,
+    "surfaceTempF": 50,
+    "surfaceGravity": 1.1,
+    "mass": 1.879
+  },
+  {
+    "name": "Therum",
+    "orbitalPeriod": 6.4,
+    "radius": 6724,
+    "dayLength": 28.3,
+    "atmPressure": 0.68,
+    "surfaceTempC": 69,
+    "surfaceTempF": 138,
+    "surfaceGravity": 1.12,
+    "mass": 1.236
+  }
+]
