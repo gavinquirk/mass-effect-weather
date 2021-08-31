@@ -1,15 +1,25 @@
-console.log('working...')
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('working...');
 
-// Elements
-const thermostat = document.querySelector('#thermostat');
+  // API Query
+  const weatherApiKey = config.weatherApiKey;
 
-// API Query
-const weatherApiKey = config.weatherApiKey
+  const userLocation = 'Carlsbad';
 
-const userLocation = 'Carlsbad'
+  const queryUrl = `http://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${userLocation}&aqi=no`;
 
-const queryUrl = `http://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${userLocation}&aqi=no`
+  const fetchWeatherData = async (url) => {
+    const response = await fetch(url);
+    const weatherData = await response.json();
+    console.log(weatherData);
+    return weatherData;
+  };
 
-const weatherData = fetch(queryUrl)
-  .then(response => response.json())
-  .then(data => console.log(data));
+  const updateWeatherData = async (data) => {
+    // Elements
+    const thermostat = document.getElementById('thermostat');
+    thermostat.innerText = data.current.temp_f;
+  };
+
+  fetchWeatherData(queryUrl).then((data) => updateWeatherData(data));
+});
